@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Permis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Questionnaire Permis</h1>
+    </header>
+
+    <section>
+        <button id="askQuestion" onclick="getQuestion()">Poser une question</button>
+    </section>
+
+    <section id="responseSection" style="display: none;">
+        <button onclick="bonneReponse()">Bonne réponse</button>
+        <button onclick="mauvaiseReponse()">Mauvaise réponse</button>
+    </section>
+
+    <p id="currentQuestion"></p>
+
+    <h2>Historique des questions</h2>
+    <p class="history" id="history"></p>
+
+    <section id="recapSection" style="display: none;">
+        <p id="recap"></p>
+        <button onclick="restartQuiz()">Recommencer le questionnaire</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
